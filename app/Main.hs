@@ -1,6 +1,6 @@
 module Main where
 
-import Lib
+import ZipperEditorRepl
 
 main :: IO ()
-main = someFunc
+main = putStrLn "noop"
