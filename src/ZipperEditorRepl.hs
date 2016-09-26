@@ -1,5 +1,6 @@
 module ZipperEditorRepl (
-  module ZipperEditorRepl
+  module ZipperEditorRepl,
+  module Text.XML.Light.Cursor
   ) where
 
 import System.IO.Unsafe (unsafePerformIO)
