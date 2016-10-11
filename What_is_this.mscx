@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <museScore version="2.06">
   <programVersion>2.0.3</programVersion>
   <programRevision>3c7a69d</programRevision>
   <Score>
-    <LayerTag id="0" tag="default" />
+    <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
     <Synthesizer>
       </Synthesizer>
@@ -30,18 +31,18 @@
     <showUnprintable>1</showUnprintable>
     <showFrames>1</showFrames>
     <showMargins>0</showMargins>
-    <metaTag name="arranger" />
-    <metaTag name="composer" />
-    <metaTag name="copyright" />
+    <metaTag name="arranger"></metaTag>
+    <metaTag name="composer"></metaTag>
+    <metaTag name="copyright"></metaTag>
     <metaTag name="creationDate">2016-09-22</metaTag>
-    <metaTag name="lyricist" />
-    <metaTag name="movementNumber" />
-    <metaTag name="movementTitle" />
+    <metaTag name="lyricist"></metaTag>
+    <metaTag name="movementNumber"></metaTag>
+    <metaTag name="movementTitle"></metaTag>
     <metaTag name="platform">Apple Macintosh</metaTag>
-    <metaTag name="poet" />
-    <metaTag name="source" />
-    <metaTag name="translator" />
-    <metaTag name="workNumber" />
+    <metaTag name="poet"></metaTag>
+    <metaTag name="source"></metaTag>
+    <metaTag name="translator"></metaTag>
+    <metaTag name="workNumber"></metaTag>
     <metaTag name="workTitle">What is this</metaTag>
     <PageList>
       <Page>
@@ -59,7 +60,7 @@
           <keysig>0</keysig>
           </StaffType>
         <defaultClef>PERC</defaultClef>
-        <bracket type="-1" span="0" />
+        <bracket type="-1" span="0"/>
         </Staff>
       <trackName>Snare Drum</trackName>
       <Instrument>
@@ -118,8 +119,8 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
-          <controller ctrl="0" value="1" />
-          <program value="56" />
+          <controller ctrl="0" value="1"/>
+          <program value="56"/>
           <synti>Fluid</synti>
           </Channel>
         </Instrument>
@@ -140,7 +141,7 @@
           </TimeSig>
         <Chord>
           <durationType>eighth</durationType>
-          <appoggiatura />
+          <appoggiatura/>
           <StemDirection>up</StemDirection>
           <Note>
             <pitch>0</pitch>
@@ -165,7 +166,7 @@
           </Chord>
         <Chord>
           <durationType>eighth</durationType>
-          <appoggiatura />
+          <appoggiatura/>
           <StemDirection>up</StemDirection>
           <Note>
             <pitch>1</pitch>
@@ -192,7 +193,7 @@
       <Measure number="2">
         <Chord>
           <durationType>16th</durationType>
-          <grace16 />
+          <grace16/>
           <Note>
             <pitch>1</pitch>
             <tpc>21</tpc>
@@ -200,7 +201,7 @@
           </Chord>
         <Chord>
           <durationType>16th</durationType>
-          <grace16 />
+          <grace16/>
           <Note>
             <pitch>1</pitch>
             <tpc>21</tpc>
@@ -220,7 +221,7 @@
         <Chord>
           <durationType>16th</durationType>
           <Beam>1</Beam>
-          <grace16 />
+          <grace16/>
           <Note>
             <pitch>0</pitch>
             <tpc>21</tpc>
@@ -229,7 +230,7 @@
         <Chord>
           <durationType>16th</durationType>
           <Beam>1</Beam>
-          <grace16 />
+          <grace16/>
           <Note>
             <pitch>0</pitch>
             <tpc>21</tpc>
@@ -250,37 +251,37 @@
       <Measure number="3">
         <Rest>
           <durationType>measure</durationType>
-          <duration z="4" n="4" />
+          <duration z="4" n="4"/>
           </Rest>
         </Measure>
       <Measure number="4">
         <Rest>
           <durationType>measure</durationType>
-          <duration z="4" n="4" />
+          <duration z="4" n="4"/>
           </Rest>
         </Measure>
       <Measure number="5">
         <Rest>
           <durationType>measure</durationType>
-          <duration z="4" n="4" />
+          <duration z="4" n="4"/>
           </Rest>
         </Measure>
       <Measure number="6">
         <Rest>
           <durationType>measure</durationType>
-          <duration z="4" n="4" />
+          <duration z="4" n="4"/>
           </Rest>
         </Measure>
       <Measure number="7">
         <Rest>
           <durationType>measure</durationType>
-          <duration z="4" n="4" />
+          <duration z="4" n="4"/>
           </Rest>
         </Measure>
       <Measure number="8">
         <Rest>
           <durationType>measure</durationType>
-          <duration z="4" n="4" />
+          <duration z="4" n="4"/>
           </Rest>
         <BarLine>
           <subtype>end</subtype>
