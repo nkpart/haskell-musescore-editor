@@ -47,7 +47,6 @@ modify f = do
   writeIORef myEditVar (fp, v)
   Save.preview (SaveOpts undefined ("Preview" ++ fp)) v
   -- save (SaveOpts fp undefined) v
-  whereami
 
 modifyM :: (Doc -> Maybe Doc) -> IO ()
 modifyM f = modify (\z -> fromMaybe z (f z))
@@ -55,19 +54,14 @@ modifyM f = modify (\z -> fromMaybe z (f z))
 myEditVar :: IORef (FilePath, Doc)
 myEditVar = unsafePerformIO (newIORef undefined)
 
-whereami :: IO ()
-whereami = readIORef myEditVar >>= putStrLn . describe . current . snd
-
 describe :: Content -> String
 describe c@(Text _) = show c
 describe c@(CRef _) = show c
 describe (Elem e) = show (elName e) `mappend` show (elAttribs e) `mappend` show (elContent e)
 
-
 --------------------------------------------
 ---------- Modification Functions ----------
 --------------------------------------------
-
 
 advanceMeasure :: Cursor -> Cursor
 advanceMeasure =
@@ -87,15 +81,17 @@ hasEmbellishment :: Cursor -> Bool
 hasEmbellishment = isJust . C.findChild isEmbellishment
 
 isEmbellishment :: Cursor -> Bool
-isEmbellishment c = anyOf (_Elem . elNameL . qNameL) (== "grace16") (current c)
+isEmbellishment c =
+  anyOf (_Elem . elNameL . qNameL)
+        (\v -> v == "grace16" || v == "appoggiatura")
+        (current c)
+
 
 -- | Move (depth first) to the next position that passes the predicate
 advanceP :: (Cursor -> Bool) -> Cursor -> Cursor
 advanceP p c =
   -- nextDF steps us off from the current position
   nextDF c >>= C.findRec p & fromMaybe c
-
-
 
 headOr :: t -> [t] -> t
 headOr x [] = x

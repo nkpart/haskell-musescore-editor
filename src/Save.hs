@@ -1,8 +1,6 @@
 module Save where
 
 import Text.XML.Light.Cursor as C
-import Data.List (unfoldr)
-import Data.Maybe
 import Text.XML.Light as X
 import XMLLens
 import Control.Lens
@@ -28,7 +26,10 @@ preview opts c =
 highlightNotesDown :: Cursor -> Cursor
 highlightNotesDown c =
   let thisStuff = current c
-   in c { current = transform (_Elem . filtered (atElementNamed' "Note") %~ setColorC) thisStuff }
+  in c
+     { current =
+       transform (_Elem . filtered (atElementNamed' "Note") %~ setColorC) thisStuff
+     }
 
 setColorC :: Element -> Element
 setColorC = (^?! _Elem) . toTree . setColor . fromElement
