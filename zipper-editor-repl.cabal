@@ -17,6 +17,10 @@ library
   exposed-modules:     ZipperEditorRepl
   build-depends:       base >= 4.7 && < 5
                      , async
+                     , xml
+                     , xml-conduit
+                     , bytestring
+                     , lens
   default-language:    Haskell2010
 
 executable zipper-editor-repl-exe
